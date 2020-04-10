@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background:rgb(230, 230, 230);
+    font-family: "Roboto", sans-serif;
+}
+
+header{
+    background-color: bisque;
+    padding: 20px;
+    box-shadow: 2px 4px 7px #888888;
+
+}
+.container{
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 4px 7px #888888;
+    min-height: 72%;
+}
+
+.start{
+    text-align: center;
+    padding: 10px;
+}
+
+.start a {
+    padding: 10px;
+    background-color: burlywood;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.about{
+    margin: auto;
+    padding: 20px;
+}
+
+.cell {
+    height: 40px;
+    width: 40px;
+    background-color: grey;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px #888888;
+  }
+
+.cell-p{
+    visibility: hidden;
+}
+.grid a{
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+.grid{
+    margin-left: 5%;
+    display: none;
+}
+
+.result p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    color: rebeccapurple;
+}
+@media only screen and (min-width: 600px) {
+  
+    .grid{
+        margin-left: 32.5%;
+    }
+    .cell{
+        height: 80px;
+        width: 80px;
+        font-size: 25px;
+    }
+}
