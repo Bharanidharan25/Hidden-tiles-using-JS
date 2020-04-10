@@ -15,11 +15,22 @@ function incSec(){
 }
 
 function timer(){
-    countdown = window.setInterval( incSec , 1000)
-    document.getElementById('time').style.display = 'block'
-    document.getElementsByClassName('grid')[0].style.display='block'
-    document.getElementById('strtbtn').innerHTML = '<a href="">STOP</a>'
-}
+    if(document.getElementById('strtbtn').textContent == 'START'){
+      countdown = window.setInterval( incSec , 1000)
+      document.getElementById('time').style.display = 'block'
+      document.getElementsByClassName('grid')[0].style.display='block'
+      document.getElementById('strtbtn').textContent = 'STOP'
+    }
+    else{
+      window.clearInterval(countdown)
+      document.getElementById('time').style.display = 'none'
+      document.getElementsByClassName('grid')[0].style.display='none'
+      document.getElementById('strtbtn').textContent = 'START'
+      sec = 0
+      min = 0
+    }
+      
+  }
 
 function colorChange(p){
     let firstValue = value[0].parentElement
